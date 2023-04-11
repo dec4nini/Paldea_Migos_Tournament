@@ -153,15 +153,15 @@ a{
 }
 
 #trainer{
-    background-image: url(resources/trainer.PNG);
+    background-image: url(./resources/trainer.PNG);
 }
 
 #leader{
-    background-image: url(resources/leader.PNG);
+    background-image: url(./resources/leader.PNG);
 }
 
 #misc{
-    background-image: url(resources/misc.PNG);
+    background-image: url(./resources/misc.PNG);
 }
 
 .active{
