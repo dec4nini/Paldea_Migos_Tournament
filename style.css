@@ -1,0 +1,194 @@
+body{
+    margin: 0;
+    background: #f1e8e6;
+}
+
+a{
+    color:aqua; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+.sticky_header{
+    
+    background: #543c52;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    height: 88px;
+    top: 0;
+    left: 0;
+    gap: 60%;
+    z-index: 1;
+    font-family: 'Allerta Stencil', sans-serif;
+    color: #FFFFFF;
+    
+}
+.header{
+    background:#edd2cb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 1rem;
+    max-width: 100%;
+
+    
+    padding: 2rem;
+    margin-top: 6rem;
+
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    color:#361d32;
+}
+.title{
+    background:#f55951;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    border-radius: 1rem;
+    max-width: 100vw;
+
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+
+    font-family: 'Allerta Stencil', sans-serif;
+    color:#FFFFFF;
+}
+.container{
+    background:#f55951;
+    display: flex;
+    flex-direction: row;
+
+    border-radius: 1rem;
+    max-width: 90vw;
+    height: 90vh;
+
+    justify-content: space-around;
+
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6rem;
+    padding: 2rem;
+
+    font-family: 'Allerta Stencil', sans-serif;
+    color:#FFFFFF;   
+}
+
+.titulo{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    color:#FFFFFF;
+}
+
+.card{
+    background:#543c52 no-repeat scroll center;
+    background-size: 100% 100%;
+    border-radius: 1rem;
+    width: 15rem;
+    height: 5rem;
+
+    flex: 1;
+    margin: 1rem;
+
+    padding: 2rem;
+
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    color:#1a0f0f;
+
+    transition-property:background-color ;
+    transition-duration: 0.5s ;
+    overflow: hidden;
+    transition: all 0.5s linear;
+
+    background-size:    55rem 55rem;
+    box-shadow: 0px 0px 7px;
+    filter:grayscale(1)
+}
+
+.card::before{
+    position: absolute;
+    background-color: #ffffff45;
+    content: '';
+    height: 120vh;
+    width: 15vw;
+    overflow: hidden;
+    transform: skewX(-30deg);
+    left: -40rem;
+}
+
+.card:hover::before{
+    animation: slide 1s;
+}
+
+@keyframes slide{
+    0%, 100%{
+        left: -40rem;
+    }
+    50%{
+        left: 150%;
+    }
+}
+.card .titulo{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(18, 14, 14, 0.941);
+}
+.card p{
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    padding-top: 2rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.712);
+}
+
+#trainer{
+    background-image: url(/resources/trainer.PNG);
+}
+
+#leader{
+    background-image: url(/resources/leader.PNG);
+}
+
+#misc{
+    background-image: url(/resources/misc.PNG);
+}
+
+.active{
+    flex: 3;
+    background-size: 40rem 40rem;
+    filter: grayscale(0);
+    height: 80vh;
+    width: 80vw;
+}
+.active p{
+    visibility: visible;
+}
+
+.footer{
+    bottom: 0;
+
+    background-color: #361d32;
+    padding: 4rem;
+    height: 10rem;
+}
+
+.footer p{
+    color: #edd2cb;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #f1e8e638;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+}
+
