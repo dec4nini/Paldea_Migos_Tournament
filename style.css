@@ -1,8 +1,14 @@
 body{
     margin: 0;
+    padding: 0;
     background: #f1e8e6;
-}
 
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+::-webkit-scrollbar {
+  display: none;
+}
 a{
     color:aqua; /* blue colors for links too */
     text-decoration: inherit; /* no underline */
@@ -106,7 +112,7 @@ a{
 
     transition-property:background-color ;
     transition-duration: 0.5s ;
-    overflow: hidden;
+    overflow: scroll;
     transition: all 0.5s linear;
 
     background-size:    55rem 55rem;
@@ -145,7 +151,7 @@ a{
     background-color: rgba(18, 14, 14, 0.941);
 }
 .card p{
-    visibility: hidden;
+    display: none;
     color: rgb(0, 0, 0);
     padding: 10px;
     padding-top: 2rem;
@@ -173,7 +179,7 @@ a{
     width: 80vw;
 }
 .active p{
-    visibility: visible;
+    display: block;
 }
 
 .footer{
@@ -181,6 +187,7 @@ a{
 
     background-color: #361d32;
     padding: 4rem;
+    margin: -4rem;
     height: 10rem;
 }
 
@@ -213,15 +220,16 @@ a{
     }
     .card{
         margin-top: 1rem;
-        height: 20rem;
-        width: 20rem;
+        height: 10rem;
+        width: 10rem;
     }
 
     .active{
         flex: 3;
         background-size: 40rem 40rem;
         filter: grayscale(0);
-        height: 20rem;
-        width: 20rem;
+        height: 10rem;
+        width: 10rem;
     }
+    
   }
